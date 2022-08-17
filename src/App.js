@@ -9,9 +9,9 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'r
 
 
 const data = [
-  { name: 'SWISS01', value: 400 },
-  { name: 'GER02', value: 300 },
-  { name: 'HUNG00', value: 300 },
+  { name: 'SWISS01', value: 105 },
+  { name: 'GER02', value: 135 },
+  { name: 'HUNG00', value: 220 },
 ];
 
 const data1 = [
@@ -130,16 +130,16 @@ function App() {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="SWISS01" stroke="#8884d8" label={<CustomizedLabel />} />
-          <Line type="monotone" dataKey="GER02" stroke="#1234d8" label={<CustomizedLabel />} />
-          <Line type="monotone" dataKey="HUNG00" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="SWISS01" stroke="#0088FE" label={<CustomizedLabel />} />
+          <Line type="monotone" dataKey="GER02" stroke="#00C49F" label={<CustomizedLabel />} />
+          <Line type="monotone" dataKey="HUNG00" stroke="#FFBB28" />
         </LineChart>    
 <PieChart width={400} height={400}>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
-            labelLine={true}
+            labelLine={false}
             nameKey= "name"
             label={renderCustomizedLabel}
             outerRadius={80}
