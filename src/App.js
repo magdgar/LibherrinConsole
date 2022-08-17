@@ -113,7 +113,15 @@ function App() {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-  }} >
+  }}>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2"><h2>Defected engines from last 6 months </h2></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>
         <LineChart
           width={500}
           height={300}
@@ -133,7 +141,10 @@ function App() {
           <Line type="monotone" dataKey="SWISS01" stroke="#0088FE" label={<CustomizedLabel />} />
           <Line type="monotone" dataKey="GER02" stroke="#00C49F" label={<CustomizedLabel />} />
           <Line type="monotone" dataKey="HUNG00" stroke="#FFBB28" />
-        </LineChart>    
+        </LineChart> 
+        <p>Number of defected engines per month</p> 
+        </td>
+        <td>
 <PieChart width={400} height={400}>
           <Pie
             data={data}
@@ -150,7 +161,16 @@ function App() {
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
+          <Legend />
+          <Line type="monotone" dataKey="SWISS01" stroke="#0088FE" label={<CustomizedLabel />} />
+          <Line type="monotone" dataKey="GER02" stroke="#00C49F" label={<CustomizedLabel />} />
+          <Line type="monotone" dataKey="HUNG00" stroke="#FFBB28" />
         </PieChart>
+        <p>Percentage of defected engines per manufactory</p>
+        </td> 
+        </tr>
+    </tbody>
+</table>
       <LineChart1/>
     </div>
   );
