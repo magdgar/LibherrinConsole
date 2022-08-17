@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-libherrin-staging-120923-authRole",
+      "UnauthRoleArn": "arn:aws:iam::760121012179:role/amplify-libherrin-staging-120923-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::760121012179:role/amplify-libherrin-staging-120923-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-libherrin-staging-120923-deployment",
+      "UnauthRoleName": "amplify-libherrin-staging-120923-unauthRole",
+      "StackName": "amplify-libherrin-staging-120923",
+      "StackId": "arn:aws:cloudformation:eu-central-1:760121012179:stack/amplify-libherrin-staging-120923/70618690-196e-11ed-ace6-0646e2fbd7f4",
+      "AmplifyAppId": "d1g39b7ctb4z8e"
+    }
+  }
+}
